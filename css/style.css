@@ -1,0 +1,302 @@
+/* ================== reset ================== */
+body *,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5em;
+}
+
+a {
+  color: var(--primary);
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  color: var(--black);
+  background-color: var(--body-background);
+}
+
+section {
+  padding: 5em 0;
+}
+
+section .header {
+  font-family: interbold;
+  color: var(--primary);
+  font-size: 2.3em;
+  letter-spacing: 0.05em;
+}
+
+section .description {
+  margin: 1.5em auto 4em;
+}
+
+/* ================== Nav ================== */
+.top-nav {
+  background-color: var(--body-background);
+  box-shadow: 0 -20px 60px var(--primary-alpha);
+  padding: 1em 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+#indicator-line {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--width, 0);
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 1px;
+  display: block;
+  --transition-time: 0.4s;
+  transition: left var(--transition-time), width var(--transition-time);
+  transform-origin: center;
+}
+
+.right {
+  --link-padding-x: 1.5em;
+  --link-padding-y: 0.6em;
+}
+
+.nav-link {
+  list-style: none;
+  margin-right: 1.5em;
+  border-right: 1px solid var(--gray);
+}
+
+.nav-link li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--black);
+  height: 100%;
+  padding: var(--link-padding-y) var(--link-padding-x);
+  transition: color 0.3s;
+}
+
+.nav-link a.active {
+  color: var(--primary);
+}
+
+.nav-link a:hover {
+  color: var(--primary);
+}
+
+.top-nav .btn:not(:first-child) {
+  margin-left: 1em;
+}
+
+.top-nav .btn-wrapper {
+  font-size: 0.9em;
+}
+
+/* ================== Header ================== */
+.home-section {
+  --margin-top: 4em;
+  margin-top: var(--margin-top);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--margin-top));
+}
+
+.home-section .header {
+  color: var(--black);
+  line-height: 1.2;
+  margin-top: 2em;
+}
+
+.home-section .description {
+  /* font-size: 0.9em; */
+  margin: 1.8em 0;
+  line-height: 1.8;
+  color: var(--dark);
+}
+
+.home-section .btn {
+  font-size: 0.8em;
+}
+
+.home-section .btn:not(:first-child) {
+  margin-left: 2em;
+}
+
+/* ================== Service ================== */
+.service-section {
+  position: relative;
+}
+
+.service-section .illustration {
+  height: 7em;
+  object-fit: contain;
+}
+
+/* ================== About ================== */
+.about-section li {
+  margin: 1.5em 0;
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+.about-section li:first-child {
+  margin-top: 2em;
+}
+
+/* ================== Package ================== */
+.card-wrapper {
+  display: flex;
+  gap: 1.8em;
+  justify-content: center;
+}
+
+.package-section .card-header {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.card-basic {
+  --color-1: var(--gradient-4);
+  --color-2: var(--gradient-5);
+}
+
+.card-premium {
+  --color-1: var(--gradient-6);
+  --color-2: var(--gradient-7);
+}
+
+.card-enterprise {
+  --color-1: var(--gradient-8);
+  --color-2: var(--gradient-9);
+}
+
+.card-header {
+  background-image: linear-gradient(320deg, var(--color-1), var(--color-2));
+}
+
+.package-section .card-header h5 {
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+.package-section .price {
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+.package-section .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
+
+.package-section .card-body h6 {
+  font-size: 1.15em;
+  font-family: interbold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.package-section .card-body hr {
+  width: 100%;
+  margin: 0 1em;
+  height: 0;
+  border: 1px solid var(--black);
+}
+
+.package-section .card-body .btn {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+/* ================== Contact ================== */
+.contact-section {
+  background-color: var(--primary);
+  color: #fff;
+  padding-top: 10em;
+  margin-top: -10em;
+  padding-bottom: 10em;
+
+  background-image: url("../img/worldmap.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-section .header {
+  color: inherit;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  display: flex;
+  box-shadow: 0 30px 50px var(--black-alpha);
+}
+
+.contact-form input,
+.contact-form button {
+  font-size: 1em;
+  padding: 2em 3em;
+  border: none;
+  outline: none;
+}
+
+.contact-form input {
+  flex: auto;
+  background-color: var(--bright-gray);
+  color: var(--black);
+  caret-color: var(--primary);
+}
+
+.contact-form button {
+  background-color: var(--dark-2);
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.contact-form input::placeholder {
+  color: #fff;
+}
+
+.socmed-wrapper {
+  margin-top: 2em;
+}
+
+.socmed-icon {
+  --size: 2em;
+  width: var(--size);
+  height: var(--size);
+  object-fit: contain;
+  margin: 0 0.5em;
+}
+
+/* ================== Footer ================== */
+footer {
+  background-color: var(--primary);
+  border-top: 1px solid var(--gray);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 0.1em;
+}

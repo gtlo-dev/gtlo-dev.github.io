@@ -1,0 +1,20 @@
+:root {
+  --body-background: #dddcec;
+  --primary: #5c4ce3;
+  --primary-alpha: #5c4ce388;
+  --dark: #2e2679;
+  --dark-2: #24197d;
+  --black: #11101f;
+  --black-alpha: #11101f66;
+  --gray: #a1a0b4;
+  --bright-gray: #bebde0;
+  --gradient-1: #392cac;
+  --gradient-2: #009cff;
+  --gradient-3: #5445cf;
+  --gradient-4: #f14d4d;
+  --gradient-5: #ffa178;
+  --gradient-6: #3b2dae;
+  --gradient-7: #5b4be1;
+  --gradient-8: #dc60f7;
+  --gradient-9: #4cbee3;
+}

@@ -1,0 +1,122 @@
+.btn {
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 2em;
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 0.5em 1em;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--body-background);
+}
+
+.btn-gradient {
+  background-image: linear-gradient(83deg, var(--primary), var(--gradient-1));
+  color: var(--body-background);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.logo {
+  height: 2em;
+}
+
+.logo-small {
+  height: 1em;
+}
+
+.popups-section {
+  background-color: #fff;
+  border-radius: 150px;
+  padding: 100px 0 200px;
+  box-shadow: 0 10px 60px -20px var(--primary-alpha);
+
+  position: relative;
+  z-index: 1;
+
+  background-image: url("../img/bg-pattern.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.popups-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 0 var(--body-background);
+  background-color: white;
+  padding: 1em 4em;
+  letter-spacing: 0.5em;
+  border-radius: 2em;
+  color: var(--primary);
+}
+
+.card {
+  background-color: #fff;
+  padding: 2em 2em 4em;
+  border-radius: 3em;
+  box-shadow: 0 10px 50px -20px var(--primary-alpha);
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: var(--gradient-3);
+  background-image: linear-gradient(
+    40deg,
+    var(--gradient-2),
+    var(--gradient-3)
+  );
+  color: #fff;
+  transform: translateY(1em);
+  box-shadow: 0 10px 40px var(--primary-alpha);
+}
+
+.card-title {
+  font-size: 1.8em;
+  margin: 0.5em 0;
+  font-family: interbold;
+}
+
+.card-description {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.card-2 {
+  background-color: #fff;
+  /* padding: 2em 2em 4em; */
+  border-radius: 2em;
+  box-shadow: 0 10px 50px -20px var(--primary-alpha);
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.card-2:hover {
+  transform: scale(1.2);
+}
+
+.card-2 .card-header {
+  padding: 2em 2em;
+  border-radius: inherit;
+}

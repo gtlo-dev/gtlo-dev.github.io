@@ -1,0 +1,24 @@
+/* Inter Regular */
+@font-face {
+  font-family: "interregular";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* Inter Bold */
+@font-face {
+  font-family: "interbold";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* Inter Black */
+@font-face {
+  font-family: "interblack";
+  src: url("../fonts/Inter-Black.ttf") format("truetype");
+  font-weight: bolder;
+}
+
+body {
+  font-family: "interregular", Arial, Helvetica, sans-serif;
+}
