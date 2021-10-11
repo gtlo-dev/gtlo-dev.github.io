@@ -1,3 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.input {
+  display: block;
+  font-size: 1em;
+  padding: 0.6em 1em;
+  border-radius: 0.8em;
+  border: 1px solid var(--black);
+  width: 100%;
+  outline: none;
+}
+
 .btn {
   text-decoration: none;
   padding: 1em 2em;
@@ -26,22 +42,6 @@
   background-color: transparent;
   border: 1px solid var(--primary);
   color: var(--primary);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.illustration {
-  width: 100%;
-}
-
-.logo {
-  height: 2em;
-}
-
-.logo-small {
-  height: 1em;
 }
 
 .popups-section {
@@ -105,7 +105,6 @@
 
 .card-2 {
   background-color: #fff;
-  /* padding: 2em 2em 4em; */
   border-radius: 2em;
   box-shadow: 0 10px 50px -20px var(--primary-alpha);
   transition: 0.2s;
@@ -119,4 +118,20 @@
 .card-2 .card-header {
   padding: 2em 2em;
   border-radius: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.illustration {
+  width: 100%;
+}
+
+.logo {
+  height: 2em;
+}
+
+.logo-small {
+  height: 1em;
 }

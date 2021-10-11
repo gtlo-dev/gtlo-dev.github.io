@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
@@ -41,9 +42,12 @@
           </ul>
           <span id="indicator-line"></span>
 
-          <div class="btn-wrapper">
-            <a href="#" class="btn btn-small btn-secondary">Sign In</a>
-          </div>
+          <button
+            class="btn btn-small btn-secondary"
+            onclick="signinModal.show(); Modal.show()"
+          >
+            Sign In
+          </button>
         </div>
       </div>
     </nav>
@@ -67,7 +71,7 @@
               ><a href="#" class="btn btn-secondary">Try Demo</a>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-6 d-flex align-items-center">
             <img src="img/head.png" alt="G" class="illustration" />
           </div>
         </div>
@@ -271,5 +275,8 @@
         class="logo-small"
       />
     </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

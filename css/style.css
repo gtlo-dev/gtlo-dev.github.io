@@ -15,6 +15,14 @@ a {
   color: var(--primary);
 }
 
+hr {
+  width: calc(100% - 1em * 2);
+  margin: 0 1em;
+  height: 0;
+  border: none;
+  border-top: 1px solid var(--black);
+}
+
 button {
   cursor: pointer;
 }
@@ -37,6 +45,24 @@ section .header {
 
 section .description {
   margin: 1.5em auto 4em;
+}
+
+/* ================== Modal ================== */
+.signin-form {
+  width: 100%;
+}
+
+.signin-form label {
+  width: 100%;
+}
+
+.signin-form input {
+  margin-top: 0.5em;
+  background-color: transparent;
+}
+
+.signin-modal span {
+  font-size: 0.9em;
 }
 
 /* ================== Nav ================== */
@@ -97,11 +123,7 @@ section .description {
   color: var(--primary);
 }
 
-.top-nav .btn:not(:first-child) {
-  margin-left: 1em;
-}
-
-.top-nav .btn-wrapper {
+.top-nav .btn {
   font-size: 0.9em;
 }
 
@@ -213,13 +235,6 @@ section .description {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-.package-section .card-body hr {
-  width: 100%;
-  margin: 0 1em;
-  height: 0;
-  border: 1px solid var(--black);
 }
 
 .package-section .card-body .btn {
