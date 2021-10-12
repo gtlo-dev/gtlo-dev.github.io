@@ -46,8 +46,8 @@
 
 .popups-section {
   background-color: #fff;
-  border-radius: 150px;
-  padding: 100px 0 200px;
+  border-radius: 15vw;
+  padding: 100px 0 10vw;
   box-shadow: 0 10px 60px -20px var(--primary-alpha);
 
   position: relative;
@@ -87,7 +87,7 @@
     var(--gradient-3)
   );
   color: #fff;
-  transform: translateY(1em);
+  transform: translateY(0.5em);
   box-shadow: 0 10px 40px var(--primary-alpha);
 }
 
@@ -112,7 +112,7 @@
 }
 
 .card-2:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .card-2 .card-header {

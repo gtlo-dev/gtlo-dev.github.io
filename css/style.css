@@ -129,18 +129,17 @@ section .description {
 
 /* ================== Header ================== */
 .home-section {
-  --margin-top: 4em;
+  --margin-top: 4.5em;
   margin-top: var(--margin-top);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: calc(100vh - var(--margin-top));
+
+  display: flex;
+  align-items: center;
 }
 
 .home-section .header {
   color: var(--black);
   line-height: 1.2;
-  margin-top: 2em;
 }
 
 .home-section .description {
@@ -168,7 +167,19 @@ section .description {
   object-fit: contain;
 }
 
+.service-section .card {
+  margin-bottom: 1em;
+}
+
 /* ================== About ================== */
+.about-section .row {
+  row-gap: 2em;
+}
+
+.about-section ol {
+  margin-left: 1.1em;
+}
+
 .about-section li {
   margin: 1.5em 0;
   line-height: 1.8;
@@ -180,10 +191,8 @@ section .description {
 }
 
 /* ================== Package ================== */
-.card-wrapper {
-  display: flex;
-  gap: 1.8em;
-  justify-content: center;
+.package-section .card-2 {
+  margin-bottom: 1em;
 }
 
 .package-section .card-header {
@@ -244,14 +253,20 @@ section .description {
 
 /* ================== Contact ================== */
 .contact-section {
+  --package-section-radius: 15vw;
+  padding-top: var(--package-section-radius);
+  margin-top: calc(var(--package-section-radius) * -1);
+
   background-color: var(--primary);
   color: #fff;
-  padding-top: 10em;
-  margin-top: -10em;
+  padding-bottom: 0;
+}
+
+.contact-section .container {
   padding-bottom: 10em;
 
   background-image: url("../img/worldmap.png");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -277,6 +292,7 @@ section .description {
 
 .contact-form input {
   flex: auto;
+  min-width: 50%;
   background-color: var(--bright-gray);
   color: var(--black);
   caret-color: var(--primary);
