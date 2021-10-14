@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>gtlo.dev</title>
@@ -34,11 +35,20 @@
         /></a>
 
         <div class="right d-flex align-items-center">
+          <input type="checkbox" id="nav-checkbox" />
           <ul class="nav-link d-flex">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#service">Service</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
           <span id="indicator-line"></span>
 
@@ -48,6 +58,11 @@
           >
             Sign In
           </button>
+          <label for="nav-checkbox" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </div>
       </div>
     </nav>

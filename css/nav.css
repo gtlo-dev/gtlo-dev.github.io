@@ -1,0 +1,144 @@
+.top-nav {
+  background-color: var(--body-background);
+  box-shadow: 0 -20px 60px var(--black-alpha);
+  padding: 1em 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.right {
+  --link-padding-x: 1.5em;
+  --link-padding-y: 0.6em;
+  --transition-time: 0.6s;
+}
+
+#indicator-line {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--width, 0);
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 1px;
+  display: block;
+  transition: var(--transition-time);
+  transform-origin: center;
+}
+
+.nav-link {
+  list-style: none;
+  margin-right: 1.5em;
+  border-right: 1px solid var(--gray);
+}
+
+.nav-link li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link a {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  height: 100%;
+  padding: var(--link-padding-y) var(--link-padding-x);
+  transition: color 0.3s;
+}
+
+.nav-link a:hover {
+  color: var(--primary);
+}
+
+.top-nav .btn {
+  font-size: 0.9em;
+}
+
+#nav-checkbox {
+  display: none;
+}
+
+#nav-toggle {
+  width: 40px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  margin-left: 1em;
+
+  cursor: pointer;
+}
+
+#nav-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark);
+
+  transition: transform var(--transition-time);
+  --translateY: 3;
+}
+
+#nav-toggle span:first-child {
+  transform: translateY(calc(-100% * var(--translateY)));
+}
+
+#nav-toggle span:last-child {
+  transform: translateY(calc(100% * var(--translateY)));
+}
+
+#nav-checkbox:checked ~ #nav-toggle span {
+  transform: scaleX(0);
+}
+
+#nav-checkbox:checked ~ #nav-toggle span:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+
+#nav-checkbox:checked ~ #nav-toggle span:last-child {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* ================== On Medium Device ================== */
+@media screen and (max-width: 767px) {
+  .top-nav .btn {
+    font-size: 1em;
+  }
+
+  #nav-toggle {
+    display: flex;
+  }
+
+  .nav-link {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    border: none;
+    border-radius: 0 0 1em 1em;
+    padding-bottom: 1em;
+    background-color: var(--bright-gray);
+
+    font-size: 2em;
+    z-index: -29;
+
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform var(--transition-time);
+  }
+
+  .nav-link li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-checkbox:checked + .nav-link {
+    transform: translateX(0);
+  }
+}

@@ -19,6 +19,7 @@ class Modal {
     // create new modal with given id
     this.element = document.createElement("div");
     this.element.classList.add("modal");
+    this.element.classList.add("glass");
     this.element.classList.add("hidden");
     this.element.id = id;
     Modal.container.appendChild(this.element);

@@ -124,6 +124,11 @@
   text-align: center;
 }
 
+.glass {
+  background-color: #fff8;
+  backdrop-filter: blur(10px);
+}
+
 .illustration {
   width: 100%;
 }
